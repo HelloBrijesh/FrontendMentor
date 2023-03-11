@@ -120,6 +120,7 @@ button:hover{
 }
 .attribution{
     margin-top:5px;
+    text-align: center;
 }
 
 @media (width > 375px){
