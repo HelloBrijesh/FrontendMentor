@@ -1,9 +1,12 @@
-/* font-family: 'Red Hat Display', sans-serif; */
 body{
     margin:0;
     padding:0;
-    background-color: hsl(225, 100%, 94%)
+    background-color: hsl(225, 100%, 94%);
+    background-image:url('../images/pattern-background-mobile.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
 }
+
 main{
     margin:40px 20px;
     background-color: white;
@@ -24,6 +27,7 @@ main{
 }
 .card-body h1{
     font-weight: 900;
+    color: hsl(223, 47%, 23%);
 }
 .card-body p{
     padding: 0 20px;
@@ -40,20 +44,17 @@ main{
     align-items: center;
     border-radius: 10px;
 }
-.plan span:nth-child(2){
-    width:100px;
-    margin-right: 30px;
+.plan p{
+    margin:0 30px 0 0;
+    color:hsl(224, 23%, 55%);    
 }
 .plan img{
     width:50px;
     height:50px;
-    margin-right: 20px;
 }
-.annual-plan{
-    font-weight: 900;
-}
-.rate{
-    color:hsl(224, 23%, 55%);
+.plan p:nth-child(1){
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
 }
 button{
     border: none;
@@ -74,18 +75,22 @@ button:hover{
 .proceed:hover{
     background-color: hsl(245, 70%, 62%);
 }
+
 .cancel{
     background-color: white;
     color:hsl(224, 23%, 55%);
     font-weight: 700;
     font-size: 14px;
 }
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media(width>375px){
+
+@media (width > 375px) {
     body{
-        height:100vh;
+        min-height:100vh;
+        background-image:url('../images/pattern-background-desktop.svg');
         display: flex;
         flex-direction: column;
         justify-content: center;
