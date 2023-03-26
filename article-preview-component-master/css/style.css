@@ -1,0 +1,166 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+main{
+    margin: 0 0.9rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card-image{
+    background-image: url('../images/drawers.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.card-body{
+    padding:2rem;
+}
+
+h1{
+    font-size: 1rem;
+    font-weight: 700;
+    color:hsl(217, 19%, 35%);
+}
+p{
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+    color:hsl(214, 17%, 51%);
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+.tooltip-item{
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 0.1rem 0.4rem;
+}
+
+.tooltip-item:hover {
+    background-color: hsl(212, 23%, 69%);
+}
+.tooltip-item:hover path{
+    fill:#fff;
+}
+.details{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.details img{
+    margin-right: 1rem;
+}
+.name{
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+.dob{
+    color:hsl(212, 23%, 69%);
+}
+
+.tooltip {
+    position: relative;
+    z-index: 999
+}
+.tooltip .tooltip-content {
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 0.5rem;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    width:80vw;
+    padding:1rem;
+    margin: 0 0 20px -285px;
+    bottom: -170%;
+    font-size: 0.8rem;
+    opacity: 0;
+    cursor: default;
+    pointer-events: none;
+    display: flex;
+    gap:20px; 
+}
+ .tooltip .tooltip-content img {
+    position: relative;
+    height: 25px;
+    width:25px;
+}
+.tooltip:hover .tooltip-content {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg)
+}
+.tooltip:hover .tooltip-item{
+    position: relative;
+    z-index: 9999;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:376px){
+
+    main{
+        max-width:700px;
+    }
+    .card{
+        display: flex;
+    }
+    .card-image{
+        min-width: 40%;
+        background-position: left;
+    }
+    h1{
+        font-size: 1.180rem;
+    }
+    p{
+        font-size:0.7rem;
+    }
+    .tooltip {
+        position: relative;
+        z-index: 999
+    }
+    .tooltip .tooltip-content {
+        border-radius: 10px;
+        left: 50%;
+        width:250px;
+        margin: 0 0 20px -141px;
+        bottom: 180%;
+        justify-content: space-around;
+    }
+    .tooltip .tooltip-content::after {
+    content: '';
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    border-color:hsl(217, 19%, 35%) transparent transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-left: -10px
+    }
+    .tooltip:hover .tooltip-item{
+        position: static;
+    }
+}
