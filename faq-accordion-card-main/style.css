@@ -134,7 +134,7 @@ input:checked ~ .tab-content {
         top:-1rem;
     }
     input:checked + .tab-label::after {
-        top: 0rem;
+        top: 0.8rem;
     }
     .tab-content {
         margin-right: 2rem;
