@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="card thank-you-card">
+        <div class="thank-you-img"><img src="./images/illustration-thank-you.svg" alt=""></div>
+        <span>You selected<span class="selected-rating"></span>out of 5</span>
+        <h4>Thank you!</h4>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Brijesh</a>.
+  </div>
+  <script>
+    let rating = window.localStorage.getItem("rating");
+    const final_rating = document.querySelectorAll(".selected-rating");
+    final_rating[0].innerHTML = rating;
+    console.log("TR : ", rating);
+  </script>
+</body>
+</html>
