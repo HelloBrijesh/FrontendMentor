@@ -60,6 +60,7 @@ input {
 .tab {
     width: 100%;
     overflow: hidden;
+    border-bottom: 1px solid rgb(218, 216, 216);
 }
 .tab-label {
     display: flex;
@@ -100,8 +101,8 @@ input:checked + .tab-label::after {
 }
 input:checked ~ .tab-content {
     max-height: 100vh;
+    padding-bottom: 1rem;
 }
-
 
 
 @media (width > 375px) {
