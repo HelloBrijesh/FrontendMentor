@@ -52,7 +52,7 @@ body {
 }
 
 form input {
-  width: 19rem;
+  width: 14rem;
   border: 1px solid hsl(0, 36%, 70%);
   padding: 1rem;
   border-radius: 2rem;
@@ -78,6 +78,8 @@ form button:hover {
 }
 .error {
   visibility: hidden;
+  text-align: left;
+  margin-left: 1rem;
 }
 .active {
   visibility: visible;
@@ -89,6 +91,7 @@ form button:hover {
   border-radius: 50%;
   color: white;
   top: -48px;
+  left: -75px;
   position: relative;
 }
 .error span {
@@ -113,16 +116,13 @@ form button:hover {
     display: none;
   }
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
   }
   main {
-    width: 1200px;
+    min-height: 100%;
     background-image: url(./images/bg-pattern-desktop.svg);
-    background-position: top 20% left 80%;
     display: grid;
+    background-size: contain;
     grid-template-columns: 60% 40%;
   }
   .logo {
@@ -139,11 +139,26 @@ form button:hover {
     font-size: 4rem;
   }
   .content {
+    min-height: 80%;
     text-align: left;
     margin-left: 5rem;
     margin-bottom: 4rem;
+    display: grid;
+    align-content: center;
   }
   .content p {
     width: 28rem;
+  }
+  form input {
+    width: 19rem;
+  }
+  .error {
+    margin-left: 0;
+  }
+  .error-icon {
+    left: 0;
+  }
+  .error span {
+    display: inline-block;
   }
 }
