@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+main{
+    margin:1rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    background-color:white;
+}
+.join{
+    padding:1.5rem;
+}
+.join h1{
+    margin:0.5rem 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+.join h2{
+    margin:0.5rem 0 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color:hsl(71, 73%, 54%);
+}
+.join p{
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+    color:hsl(218, 22%, 67%);
+}
+.subscription{
+    background-color: hsl(179, 63%, 40%);
+    padding:1.5rem;
+}
+.subscription h2{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.subscription p{
+    color: hsl(204, 43%, 93%);
+    margin-top: 0.5rem;
+}
+.plan{
+    color: hsl(218, 22%, 67%);
+    display: flex;
+    align-items: center;
+}
+.price{
+    color:white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 0.9rem;
+}
+.subscription button{
+    border: none;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding:1rem;
+    margin: 1.5rem 0 0.7rem;
+    background-color: hsl(71, 73%, 54%);
+    color:white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.why{
+    padding:1.5rem;
+    background-color: hsl(179, 62%, 43%);
+}
+.why h2{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.why p{
+    color:hsl(204, 43%, 93%);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+}
+.attribution { margin-top: 1rem; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media(width > 376px){
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        width:630px;
+    }
+    .join{
+        padding:2rem;
+    }
+    .join p{
+        font-size: 0.9rem;
+    }
+    .bottom{
+        display: flex;
+    }
+    .bottom>*{
+        flex: 1;
+    }
+    .subscription{
+        padding:2rem;
+    }
+    .why{
+        padding:2rem;
+    }
+}
