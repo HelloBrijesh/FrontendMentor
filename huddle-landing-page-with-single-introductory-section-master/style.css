@@ -84,11 +84,15 @@ main p {
   .banner {
     margin-right: 5rem;
   }
-  .register h1 {
-    font-size: 3rem;
-  }
   .register {
     text-align: left;
+  }
+  .register h1 {
+    font-size: 3rem;
+    margin-right: 3rem;
+  }
+  .register p {
+    margin-right: 9rem;
   }
   .social-icon {
     margin-top: 5rem;
