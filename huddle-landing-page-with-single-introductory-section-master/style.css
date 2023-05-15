@@ -71,10 +71,6 @@ main p {
 }
 @media (width > 475px) {
   body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
   }
@@ -82,14 +78,14 @@ main p {
     margin: 2rem 5rem;
   }
   .body {
-    display: flex;
-  }
-  .body > * {
-    flex: 1;
-    height: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
   }
   .banner {
     margin-right: 5rem;
+  }
+  .register h1 {
+    font-size: 3rem;
   }
   .register {
     text-align: left;
