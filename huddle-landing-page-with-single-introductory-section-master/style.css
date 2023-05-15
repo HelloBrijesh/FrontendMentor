@@ -71,6 +71,7 @@ main p {
 }
 @media (width > 475px) {
   body {
+    min-height: 100vh;
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
   }
@@ -79,7 +80,7 @@ main p {
   }
   .body {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.7fr 1fr;
   }
   .banner {
     margin-right: 5rem;
@@ -88,11 +89,9 @@ main p {
     text-align: left;
   }
   .register h1 {
-    font-size: 3rem;
-    margin-right: 3rem;
+    font-size: 2.5rem;
   }
   .register p {
-    margin-right: 9rem;
   }
   .social-icon {
     margin-top: 5rem;
