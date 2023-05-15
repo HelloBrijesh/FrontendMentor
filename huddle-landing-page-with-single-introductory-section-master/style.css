@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/bg-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+}
+.logo {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+.logo img {
+  width: 200px;
+}
+main {
+  color: white;
+  margin: 2rem 1.5rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+main h1 {
+  font-size: 1.8rem;
+  margin: 3rem 0 2rem;
+  font-family: "Poppins", sans-serif;
+}
+main p {
+  font-size: 1.1rem;
+}
+.banner img {
+  width: 100%;
+}
+.register button {
+  width: 13rem;
+  margin: 2rem 0 5rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+}
+.register button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+.social-icon i {
+  margin-right: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+#fb {
+  padding: 0.5rem 0.7rem;
+}
+.social-icon i:hover {
+  cursor: pointer;
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (width > 475px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+  }
+  main {
+    margin: 2rem 5rem;
+  }
+  .body {
+    display: flex;
+  }
+  .body > * {
+    flex: 1;
+    height: 80%;
+  }
+  .banner {
+    margin-right: 5rem;
+  }
+  .register {
+    text-align: left;
+  }
+  .social-icon {
+    margin-top: 5rem;
+    text-align: right;
+  }
+}
