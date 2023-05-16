@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+header {
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.bars {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1 {
+  margin-top: 0;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+  position: relative;
+  z-index: 9999;
+}
+.change .bar1 {
+  transform: translate(0, 5px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
+.menu {
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 60px;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu li {
+  padding: 1rem;
+}
+.menu a {
+  font-weight: 700;
+
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+.menu button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 41%);
+  background-color: #fff;
+  width: 80%;
+  margin: 0.4rem 2rem;
+  cursor: pointer;
+  padding: 0.7rem 0;
+}
+.menu ul li ul {
+  margin-top: 1.5rem;
+}
+.feature-submenu img {
+  margin-right: 0.7rem;
+}
+.login {
+  border: none;
+}
+.register {
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 0.8rem;
+}
+.content {
+  margin: 0rem 1rem;
+  text-align: center;
+}
+.banner {
+  background-image: url(./images/image-hero-mobile.png);
+  min-height: 20rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+main p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 41%);
+}
+main button {
+  margin: 2rem 0 3rem;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: hsl(0, 0%, 98%);
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: hsl(0, 0%, 8%);
+}
+.clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.clients img {
+  max-width: 100%;
+  height: auto;
+}
+.attribution {
+  margin-top: 3rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (width > 475px) {
+  main {
+    margin: 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+  }
+  .banner {
+    order: 2;
+    background-image: url(./images/image-hero-desktop.png);
+  }
+  .content {
+    order: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+  }
+  .content h1 {
+    font-size: 4rem;
+  }
+  .content h1 span {
+    display: block;
+  }
+  .content p {
+    width: 25rem;
+  }
+
+  .bars {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+  }
+
+  #arrow {
+    margin-left: 0.5rem;
+  }
+
+  .menu {
+    position: static;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+  .menu ul {
+    list-style-type: none;
+  }
+  .menu li {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .menu a {
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .menu div {
+    display: flex;
+    justify-content: center;
+  }
+  .menu button {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 41%);
+    background-color: #fff;
+    margin: 0.4rem 1rem;
+    cursor: pointer;
+    padding: 0.7rem;
+  }
+  .menu ul li ul {
+    display: none;
+    position: absolute;
+    margin-top: 1rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 1px hsl(0, 0%, 41%, 0.3);
+    border-radius: 0.5rem;
+  }
+  .menu ul li ul li {
+    display: flex;
+    cursor: pointer;
+  }
+  .login {
+    border: none;
+  }
+  .register {
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 0.8rem;
+  }
+}
